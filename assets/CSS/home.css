@@ -1,0 +1,88 @@
+.pai-dos-lados{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.pai-dos-lados div{
+    width: 50%;
+}
+ .pai-dos-lados .lado-direito img{
+    width: 100%;
+ }
+ .pai-dos-lados .lado-esquerdo p{
+    text-align: justify ;
+ }
+ .pai-dos-lados .lado-esquerdo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ }
+ .pai-dos-lados .lado-esquerdo button{
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    box-shadow: black 3px 3px 0px;
+    cursor:pointer;
+ }
+ 
+ .pai-dos-lados .lado-esquerdo h1 , .newsletter h2{
+    text-transform: uppercase;
+ }
+ .newsletter{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 30px;
+ }
+.newsletter .espace{
+    display: flex;
+    flex-direction: column;
+    gap:5px
+}
+.newsletter form input{
+   padding: 10px 6px;
+   
+}
+
+.btn {
+   width: 50%;
+   border: 2px solid black;
+   border-radius: 4px;
+   padding: 10px 20px;
+   background-color: #333;
+   color: #fff;
+   box-shadow: black 3px 3px 0px;
+   cursor:pointer;
+   text-align: center;
+}
+
+.btn:hover{
+   background-color: black;
+
+}
+
+@media screen and (max-width: 780px){
+.newsletter form {
+   display: flex;
+flex-direction: column;
+gap: 6px;
+}
+}
+   
+
+
+/* esse comando serve para que toda vez que a página diminuir a expansividade ,como se fosse para a tela de um celular , faça a alteração da tela */
+@media screen and (max-width: 733px){
+   .pai-dos-lados {
+      flex-direction: column-reverse;
+
+   }
+   .pai-dos-lados div{
+      width: 100%;
+  }
+} 
+   
